@@ -12,3 +12,8 @@ This mail merge app takes data from a database, spreadsheet, or other form of st
    - Go to the terminal and run this command ````streamlit run Esender.py````
    
 3. Make sure to enable the "allow less secure apps" option of your google account which you will be using in sending mails.
+
+## Screenshots
+
+![App Screenshot](http://full/path/to/img.jpg "Optional title")
+
