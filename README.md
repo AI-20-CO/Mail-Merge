@@ -15,5 +15,5 @@ This mail merge app takes data from a database, spreadsheet, or other form of st
 
 ## Screenshots
 
-![App Screenshot](http://full/path/to/img.jpg "Optional title")
+![App Screenshot](![Screenshot 2022-08-16 002035](https://user-images.githubusercontent.com/73228148/184721142-9fe27625-7a27-49e7-b575-b1592fe321ad.png)")
 
