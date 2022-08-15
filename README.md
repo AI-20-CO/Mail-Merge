@@ -13,3 +13,5 @@ Link: [✖️TIC TAC TOE⭕](https://tic-tac-toe-t3.herokuapp.com/)
 
 2. Usage
    - Go to the terminal and run this command ````streamlit run Esender.py````
+   
+3. Make sure to enable the "allow less secure apps" option of your google account which you will be using.
