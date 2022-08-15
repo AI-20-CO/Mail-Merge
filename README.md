@@ -14,5 +14,5 @@ This mail merge app takes data from a database, spreadsheet, or other form of st
 3. Make sure to enable the "allow less secure apps" option of your google account which you will be using in sending mails.
 
 ## Screenshots
-(![Screenshot 2022-08-16 002035](https://user-images.githubusercontent.com/73228148/184721142-9fe27625-7a27-49e7-b575-b1592fe321ad.png)")
+![Screenshot 2022-08-16 002035](https://user-images.githubusercontent.com/73228148/184721142-9fe27625-7a27-49e7-b575-b1592fe321ad.png)
 
