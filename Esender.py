@@ -114,6 +114,7 @@ def login():
     user_name_log = st.text_input('Username : ')
     password_log = st.text_input('Password : ', type='password')
     button_confirm = st.button('log in')
+    st.error('your account will be stored unless you delete it!')
 
     if button_confirm:
         position_redirect = pyautogui.position()
@@ -496,50 +497,54 @@ def delete_account():
         st.success('Successfully Deleted Account')
 
 
-def testing():
-    st.markdown('''
-        <a href="https://github.com/Ayaan-20" target = "_blank">
-            <img src="https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png" width = "50%" height = "50%" />
-        </a>''',
-                unsafe_allow_html=True
-                )
-    pass
-
-
 # Logged in
 if check_bool:
     # User Password Used Everywhere.
     password = check_log_or_sign[0][2]
     # Making a Select box to switch between the Options.
-    select_box = st.sidebar.selectbox('', ['Send Mail', 'Testing', 'Add', 'Delete', 'Update', 'Account'])
+    select_box = st.sidebar.selectbox('', ['Send Mail 📨', 'Add 🗒️', 'Delete 🚮', 'Update 📝', 'Account 👤','About 📜'])
 
-    if select_box == 'Send Mail':
+    if select_box == 'Send Mail 📨':
         # Storing the return value from show_contacts_with_search module to "send to" variable , thus sending mails to the selected options.
         send_to = show_contacts_with_search()
         send_mail(send_to)
-    elif select_box == 'Testing':
-        testing()
 
-    elif select_box == 'Add':
+    elif select_box == 'Add 🗒️':
         show_contacts_with_search()
         add_contacts()
 
-    elif select_box == 'Delete':
+    elif select_box == 'Delete 🚮':
         # Storing the return value from show_contacts_with_search module to "which_contact" variable , thus Deleting Mail Contacts by knowing the selected options.
         which_contact = show_contacts_with_search()
         delete_email(which_contact)
 
-    elif select_box == 'Update':
+    elif select_box == 'Update 📝':
         # Storing the return value from show_contacts_with_search module to "update_sel" variable , thus Updating Mail Contact by knowing the selected option to update.
         update_sel = show_contacts_with_search()
         update_name(update_sel)
 
-    elif select_box == 'Account':
+    elif select_box == 'Account 👤':
         account()
+
+    elif select_box == 'About 📜':
+        # simple html code to make the page vibrant
+        about_info1 = '''<div
+                 style="background-image: linear-gradient(to right, #f63366, #fffd80);padding:2px;border-radius:9px">
+                 </div> '''
+        st.markdown(about_info1, unsafe_allow_html=True)
+
+        # writing the text using html
+        st.text('')
+        about_info2 = '''<div
+                 style="background-color:rgb(14, 17, 23);padding:2px;border-radius:9px">
+                 <h2 
+                 style="color:white;text-align:center;font-size:20px">DEVELOPER : AYAAN IZHAR
+                 </h2> 
+                 </div> '''
+        st.markdown(about_info2, unsafe_allow_html=True)
 
 # Not Logged in
 else:
     st.markdown('>Log in to your domain')
     login()
 
-# storemailencrypt12342002verify@gmail.com : test 101
